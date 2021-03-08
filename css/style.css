@@ -79,13 +79,13 @@ ul {
     background: #fff;
     padding: 15px;
     border-radius: 7px;
-    width:255px;
-    max-height: 575px;
-    overflow:hidden;
+    width:230px;
+    max-height:520px;
 }
 
 img {
     background:#f1f1f1;
+    width:230px;
 }
 
 .highlightBtn {
@@ -102,7 +102,7 @@ img {
       gap:20px;
 }
 .filterContainer{
-    width:285px;
+    width:260px;
     margin:auto;
 }
 .cardContainer{
@@ -115,7 +115,7 @@ img {
 @media screen and (min-width: 700px){
     main{
         display:grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 4fr;
         gap:10px;
         
   }
