@@ -18,9 +18,9 @@ The project aims to offers a single page application which enables user to brows
 * Null data is handled to show info messages - 'Not Available' & 'Image Not Available'.
 
 ### Built With
-* AngulasJS - Javascript FrameWork
-* HTML - Markup Language
-* CSS - Styling
+* AngulasJS 1.8.2 - Javascript FrameWork
+* HTML 5 - Markup Language
+* CSS 3 - Style sheet
 
 ### Key Features
 * Filters - Year, Landing Sucess, Lauch Success.
