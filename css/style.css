@@ -80,7 +80,8 @@ ul {
     padding: 15px;
     border-radius: 7px;
     width:255px;
-    max-height: 500px;
+    max-height: 575px;
+    overflow:hidden;
 }
 
 img {
