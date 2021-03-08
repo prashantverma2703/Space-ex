@@ -16,6 +16,7 @@ The project aims to offers a single page application which enables user to brows
 * The result variable is two way binded and hence it reflects in view.
 * Media queries are used to cater all standard device screen sizes.
 * Null data is handled to show info messages - 'Not Available' & 'Image Not Available'.
+* Use of semantic tags and SEO best practices to reach lighthouse SEO score of 100.
 
 ### Built With
 * AngulasJS 1.8.2 - Javascript FrameWork
