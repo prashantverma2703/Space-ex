@@ -1,5 +1,5 @@
 # SpaceX
-*Project to browse, filter and search various SpaceEx programs on a single page.
+Project to browse, filter and search various SpaceEx programs on a single page.
 
 ### To run this project
 Run  `git clone https://github.com/prashantverma2703/Space-ex.git` to clone this project. Run with live-server/local-host/node server.
@@ -23,5 +23,5 @@ The project aims to offers a single page application which enables user to brows
 * SEO - 100
 
 ### Author
-* **Prashant Verma**
+ **Prashant Verma**
 
