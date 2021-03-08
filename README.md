@@ -32,6 +32,8 @@ The project aims to offers a single page application which enables user to brows
 * Best Practice - 93
 * SEO - 100
 
+### Acknowledgement
+SpaceX API : https://api.spaceXdata.com/
 ### License
 Distributed under the MIT License. See `LICENSE` for more information.
 
