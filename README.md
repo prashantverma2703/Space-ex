@@ -1,4 +1,4 @@
-# Space-ex
+# SpaceX
 *Project to browse, filter and search various SpaceEx programs on a single page.
 
 ### To run this project
@@ -22,6 +22,6 @@ The project aims to offers a single page application which enables user to brows
 * Best Practice - 93
 * SEO - 100
 
-###Author
+### Author
 * **Prashant Verma**
 
