@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SpaceEx</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <script src="/js/app.js"></script>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body ng-app="MyApp" ng-controller="IndexController">
+        <section class="parentContainer">
+            <header><h1>SpaceX Launch Programs</h1></header>
+            <main>
+                <div class="filterContainer">
+                    <h2>Filters</h2>
+                    <div class="filterParent"> 
+                        <form ng-submit="applyFilter('year',yearText)">
+                            <input type="text" id="launchYear" ng-model="yearText" placeholder="Launch Year">
+                        </form>   
+                        
+                            <div class="grid marginTop20">
+                                <div ng-repeat="i in ['2006','2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017','2018','2019','2020']">
+                                <button ng-click="applyFilter('year',i)" ng-class="{'highlightBtn':year==i}">{{i}}</button>
+                                </div>
+                            </div>
+                            <form ng-submit="applyFilter('launch',launchText)">
+                                <input type="text" class="marginTop20" ng-model="launchText" placeholder="Successful Launch">
+                            </form>
+                            
+                            <div class="grid marginTop20">
+                                <div><button ng-click="applyFilter('launch','true')" ng-class="{'highlightBtn':launch=='true'}">True</button></div>
+                                <div><button ng-click="applyFilter('launch','false')" ng-class="{'highlightBtn':launch=='false'}">False</button></div>
+                            </div>
+                            <form ng-submit="applyFilter('land',landText)">
+                                <input type="text" class="marginTop20" ng-model="landText" placeholder="Successful Landing">
+                            </form>
+                            
+                            <div class="grid marginTop20">
+                                <div><button ng-click="applyFilter('land','true')" ng-class="{'highlightBtn':land=='true'}">True</button></div>
+                                <div><button ng-click="applyFilter('land','false')" ng-class="{'highlightBtn':land=='false'}">False</button></div>
+                            </div>
+                    </div>
+                </div>
+                <div class="cardContainer">
+                    <div class="card" data-ng-repeat="i in result">
+                        <img src="{{i.links.mission_patch_small}}">
+                        <h3 id="missionName">{{i.mission_name}} #{{i.flight_number}}</h3>
+                        <div>
+                            <h4>Mission Ids:</h4>
+                            
+                            <ul data-ng-if="i.mission_id.length>0">
+                                <li data-ng-repeat="x in i.mission_id">{{x}}</li>
+                            </ul>
+                        </div>
+                        <p><b>Launch Year: </b>{{i.launch_year}}<span data-ng-if="i.launch_year==null">Not Available</span></p>
+                        <p><b>Successful Launch: </b>{{i.launch_success}}<span data-ng-if="i.launch_success==null">Not Available</span></p>
+                        <p><b>Successful Landing: </b>{{i.rocket.first_stage.cores[0].land_success}}<span data-ng-if="i.rocket.first_stage.cores[0].land_success==null">Not Available</span></p>
+
+                    </div>
+
+                </div>
+            </main>
+            <footer><h3>Developed By: Prashant Verma</h3></footer>
+        </section>
+    </body>
+</html>
