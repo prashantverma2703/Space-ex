@@ -44,7 +44,8 @@
                 </div>
                 <div class="cardContainer">
                     <div class="card" data-ng-repeat="i in result">
-                        <img src="{{i.links.mission_patch_small}}">
+                        <img  data-ng-if="i.links.mission_patch_small!=null" src="{{i.links.mission_patch_small}}">
+                        <p data-ng-if="i.links.mission_patch_small==null">Image Unavailable</p>
                         <h3 id="missionName">{{i.mission_name}} #{{i.flight_number}}</h3>
                         <div>
                             <h4>Mission Ids:</h4>
